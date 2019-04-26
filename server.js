@@ -192,8 +192,6 @@ app.delete("/api/deletecomment/:id", (req, res) => {
     res.json(result);
   });
 });
-// require("./controllers/apiRoutes")(app);
-//require("./controllers/htmlRoutes")(app);
 
 app.listen(PORT, () => {
   console.log("App running on port " + PORT + "!");
