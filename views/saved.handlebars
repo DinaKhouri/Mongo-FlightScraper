@@ -1,0 +1,61 @@
+<div class="container">
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Flight Comments</h4>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <div class="comment-section">
+                    </div>
+                </div>
+                <form>
+                    <input type="text" class="form-control comment-body" placeholder="Enter a comment..." />
+
+                    <div id="buttons-section">
+                        <button type='submit' class='add-comment btn-small theme_btn button_hover '>Add comment</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close btn-flat">Cancel</a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <h4 class="grey-text text-darken-2 center">Your Saved Flights</h4>
+        </div>
+    </div>
+    <div class="row saved-articles">
+        {{#each articles}}
+        <div class="col-lg-3 col-sm-6 cardbackground">
+            <div class="card">
+                <img src="http://clipart-library.com/images/8cEbRerRi.png" class='responsive-img' alt="">
+                <div class="card-content">
+                    <div class="row content-box">
+
+                        <div class="col s12">
+                            <a class="card-title">
+                                <h5>{{fromShort}} To {{toShort}}</h5>
+                            </a>
+                            <p>{{date}}</p>
+                            <p>
+                                <h3>{{price}}</h3>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <button class="theme_btn button_hover btn btn-small article-comments modal-trigger" data-target="modal1"
+                            data-id={{_id}}>
+                            comments</button>
+                        <button class="btn btn-small delete-save theme_btn button_hover" data-id={{_id}}>Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+
+</div>

@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, Helvetica, sans-serif !important;
+    /* background-image: url('../img/bkg.jpg'); */
+    background-color: #f9d187;
+}
+
+.npr-logo {
+    height: 65px;
+    width: 125px;
+}
+
+.cardbackground {
+    background-color: white;
+    width: 30%;
+    float: left;
+    margin-left: 2%;
+    margin-top: 2%;
+    padding: 3%;
+
+}
+
+
+
+.nav-link {
+    color: grey !important;
+}
+
+.npr-music-img {
+    margin-top: 40px;
+}
+
+.word-1 {
+    color: #d62021;
+}
+
+.word-2 {
+    color: #000006;
+}
+
+.word-3 {
+    color: #247bbd
+}
+
+.delete-save {
+    margin-top: 3px;
+}
+
+.save-article,
+.delete-save,
+.article-comments {
+    border-radius: 14px;
+    width: 95%;
+}
+
+.image-box {
+    margin-top: 15px;
+}
+
+.content-box {
+    display: flex;
+    align-items: center;
+}
+
+.comment-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.comment-box>p {
+    font-size: 16px;
+    margin: 5px;
+}
+
+.delete-comment {
+    border-radius: 12px;
+}
+
+.add-comment {
+    border-radius: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    .content-box {
+        display: block;
+        text-align: center;
+    }
+
+    .card-action {
+        text-align: center;
+    }
+
+    .article-comments {
+        margin-bottom: 10px;
+    }
+
+    .fa-bars {
+        color: black;
+        font-size: 32px;
+    }
+
+    .npr-logo {
+        height: 58px;
+        width: 126px;
+    }
+
+    .brand-logo {
+        position: relative !important;
+    }
+}
