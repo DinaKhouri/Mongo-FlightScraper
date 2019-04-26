@@ -27,22 +27,8 @@ $.getJSON("/articles", function (data) {
       <h5>${data[i].price}<small> Round Trip</small></h5></div></div></div></div></div>`
     );
   }
-}); {
-  /* 
-        `<div class='col-lg-3 col-sm-6 cardbackground'>
-        <div class='accomodation_item text-center'>
-        <div class="hotel_img">
-                        <img src="http://clipart-library.com/images/8cEbRerRi.png" class='responsive-img' alt="">
-                        <a href="#" class="btn theme_btn button_hover article-comments modal-trigger" data-target="modal1"
-                            data-id=data[i]._id">Save Flight</a>
-                    </div>
-                    <a href=" #">
-                            <h4>+data[i].from+ "To" +data[i].to+</h4>
-                        </a>
-                        <h5>{{price}}<small> Round Trip</small></h5>
-                    </div>
-                    </div>` */
-}
+});
+
 
 //Scrape articles
 $(".scrape").on("click", () => {
