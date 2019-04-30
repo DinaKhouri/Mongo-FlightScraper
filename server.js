@@ -36,6 +36,7 @@ mongoose.connect(MONGODB_URI, {
 
 // A GET route for scraping the echoJS website
 app.get("/api/scrape", function (req, res) {
+  if (err) throw (err);
   // First, we grab the body of the html with axios
   axios.get("https://www.cheaptickets.com/Destinations-In-United-States-Of-America.d201.Flight-Destinations").then(function (response) {
     // Then, we load that into cheerio and save it to $ for a shorthand selector
