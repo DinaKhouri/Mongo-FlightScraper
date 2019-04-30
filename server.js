@@ -27,9 +27,7 @@ app.set("view engine", "handlebars");
 const MONGODB_URI =
   process.env.MONGODB_URI || "mongodb://localhost/MongoScraper";
 
-mongoose.connect(MONGODB_URI, {
-  useNewUrlParser: true
-});
+mongoose.connect(MONGODB_URI);
 
 
 // Routes
@@ -40,7 +38,7 @@ app.get("/api/scrape", function (req, res) {
   // First, we grab the body of the html with axios
   axios.get("https://www.cheaptickets.com/Destinations-In-United-States-Of-America.d201.Flight-Destinations").then(function (response) {
     // Then, we load that into cheerio and save it to $ for a shorthand selector
-    var $ = cheerio.load(res.data);
+    var $ = cheerio.load(response.data);
 
     // Now, we grab every h2 within an article tag, and do the following:
     $("div.flex-content").each(function (i, element) {
